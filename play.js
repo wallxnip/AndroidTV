@@ -1,7 +1,7 @@
 // Dados de séries e episódios (8 episódios)
 const episodes = [
-    {title:"Episódio 1", thumb:"p.jpg", url:"https://download1321.mediafire.com/j7692axkjcrgV4sx5QRRbngwbPMc2QTquEzXEE6G-WkR6U8qBYMPv5bP5RwOqni_mMQic6BopLgxSuKkk7l_AN6AN7OE2kkIzjbfIFgUups_crydbg1n8lwLa_x89cHPFBTKFA5MvGB0ro4q_u9kDeWhMTLyuqhxGMD_XlvCemA/tivc2qfqigwrz9k/3-3%282%29.mp4"},
-    {title:"Episódio 2", thumb:"p.jpg", url:"https://download1654.mediafire.com/7g8jvzm7dq7gs82MwMjTt4jczHmMTlIwMma6ofU5V0U0pJAWTAkj0WbptskTJcOjYI1s7DCQKayi1ueWiLlDP9tNNmkuECTHVAbqto-YeY--F1HoaMBcHfwDH-4J2jFeV3FARJZudO7OCVAiLuMbCA1jSJA2Clwfml-yKymYjDyLQw/b6p7zy5k2d3yc7w/3-4%282%29.mp4"},
+    {title:"Episódio 1", thumb:"p.jpg", url:"1.mp4"},
+    {title:"Episódio 2", thumb:"p.jpg", url:"2.mp4"},
     {title:"Episódio 3", thumb:"p.jpg", url:"https://download1476.mediafire.com/1k62dcn3nnggburseyTwTRUji4yT3L_D5obORNcekQLjqMPekspSkXZP3ZaGpupnnrNd8sUPpbMMljXT9-6e8jybF5KnP4oCDT3j5I-FSowIYl6etH_6RYQzmLPUMR8T2408Wgrf9wFUFkyZwSDnhchNvjbBarSCISidVVurdLsJWw/2y2yxu3x3rba1fr/3-5%287%29.mp4"},
     {title:"Episódio 4", thumb:"p.jpg", url:"https://download1580.mediafire.com/b8hqntihryigIC6SZMVzMZ_8GUjBSBuKTty05dIkY2LfwpsdFjwvUb65UqxJ0yyz9JzbchnJ2VAiXbAi_wq3roVNhbmXOus-ER3quXclgqPJwic8h4qcPk2uoIj_jm2AmZCstvQqNxit471iFXbeM2APkjPbnxFZmGQBD7LMFQE/l2b4zlk1w38xcf6/3-6%285%29.mp4"},
     {title:"Episódio 5", thumb:"p.jpg", url:"https://download1326.mediafire.com/umn26y7p8negENFjyCVMPL-rXGzti-2pxNfmjedHFfNLZmcbWbUtFu4j1-0Z91kHS5n-NNnGk8nyuKZdCqF1uJ7uXqbMcOnH24Py9umWwEd-LSk5a1xGdkczEETQlvcPAUW9w_x-tcsqfIZ1k3zZLUvnZHWSZhugMIyZQfT-tKt5KQ/eyedgvwd321oz5n/3-7%282%29.mp4"},
