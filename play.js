@@ -1,6 +1,6 @@
 // Dados de séries e episódios (8 episódios)
 const episodes = [
-    {title:"Episódio 1", thumb:"https://twdserie.club/img/xa050ep8a7_p.jpg", url:"https://tln-hg.top/stream/NzBAl-HPek7RyHWJ8SO13w/kjhhiuahiuhgihdf/1762006704/8233117/index-v1-a1.m3u8"},
+    {title:"Episódio 1", thumb:"https://twdserie.club/img/xa050ep8a7_p.jpg", url:"https://tln-earn.top/v/194xzgx0ziv7"},
     {title:"Episódio 2", thumb:"https://twdserie.club/img/p2xp62qi74_p.jpg", url:"https://tln-hg.top/stream/PuYMf2Qcytrh-DzxDDsImA/kjhhiuahiuhgihdf/1762021313/8233100/index-v1-a1.m3u8"},
     {title:"Episódio 3", thumb:"https://twdserie.club/img/u5xq343qc7_p.jpg", url:"https://tln-hg.top/stream/jPzyij8xvGVfbLD4l4zrlA/kjhhiuahiuhgihdf/1762021484/8233112/index-v1-a1.m3u8"},
     {title:"Episódio 4", thumb:"https://twdserie.club/img/e4rb6351vr_p.jpg", url:"https://tln-hg.top/stream/_EZcyNR4h-3soUMOQEWvcg/kjhhiuahiuhgihdf/1762021609/8233197/index-v1-a1.m3u8"},
