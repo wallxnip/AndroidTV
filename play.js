@@ -1,5 +1,5 @@
 // Dados de séries e episódios (8 episódios)
 const episodes = [
-{title:"Episódio 1", thumb:"https://image.tmdb.org/t/p/original/3ynZzFOTXVKgN9zaIXLehZCKKfY.jpg", url:"https://download848.mediafire.com/s8mf2fuxd0kg0bfVUKFoeblbSAPtfbO9YPPZnimSZzDCweKqLSn9MtJFYfHfbeSzC77cdPk2Qqh4dNfLWEzVpPOBZWMluvSRfkZhirx5O5Q5to3kywwMr-yVjuzEHJTbCjy3pllX4Tm41KWa9JQSIcWErpe56FeuVIKJR-FLiSsT/w5b3mccxi5gqga5/4-8%282%29.mp4"},
+{title:"Episódio 1", thumb:"https://image.tmdb.org/t/p/original/AjwsOW62iFDUAx9ehJYoPdHC5h8.jpg", url:"https://download848.mediafire.com/bm5db5vpsxmgSK92s3ViHDIcLaToWLfhKOZFhOf_ndORTi3YbKFylmOpSVk4ytc7OJOG3ksVqkIQrLPGSgKwqQv4BNCTZCvSshfKVFG2IEki6_wLewO4DXiUJcLhm37hR7uKPkwOZtaisI-5BZgcH6vo324xjUMoU634J2Y_LVoz/8dgiz162mp5cdpe/4-8%285%29.mp4"},
 
 ];
