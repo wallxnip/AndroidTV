@@ -1,6 +1,7 @@
 // ===========================
 // Lista de episódios
 // ===========================
+const video = document.getElementById('splash');
 video.poster = 'https://image.tmdb.org/t/p/original/6eGhkMobNuL3sh9KSpfhxBSryHh.jpg';
 const logo = document.getElementById('topLogo');
 logo.src = 'https://image.tmdb.org/t/p/original/3hRYalezTWUScmsiBq9L2f0QHJe.png';
