@@ -5,7 +5,7 @@ const config = {
   poster: "https://i.postimg.cc/pTqKR8Y2/cover.webp",
   logo: "https://i.postimg.cc/sXV5kKSj/logof.webp",
   episodes: [
-    { title: "Episódio 1", url: "https://www.mediafire.com/file/qu1bs8hetxox473/TDO01.html", thumb: "https://i.postimg.cc/pTqKR8Y2/cover.webp" },
+    { title: "Episódio 1", url: "https://www.mediafire.com/file/yzf5x2xozw0znuv/TH01.mkv", thumb: "https://i.postimg.cc/pTqKR8Y2/cover.webp" },
     { title: "Episódio 2", url: "#", thumb: "#" },
     { title: "Episódio 3", url: "#", thumb: "#" },
   ]
