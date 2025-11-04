@@ -21,7 +21,7 @@ if (playerPoster) playerPoster.poster = poster;
 
 const logoElement = document.getElementById('topLogoWrap');
 if (logoElement) {
-  logoElement.innerHTML = `<img src="${logo}"/>`;
+  logoElement.innerHTML = `<img id="topLogo" src="${logo}"/>`;
 }
 episodes.forEach(ep => {
   if(!ep.thumb) {
