@@ -2,8 +2,8 @@
 // Configuração dinâmica
 // ===========================
 const config = {
-  poster: "https://image.tmdb.org/t/p/original/6eGhkMobNuL3sh9KSpfhxBSryHh.jpg",
-  logo: "https://image.tmdb.org/t/p/original/3hRYalezTWUScmsiBq9L2f0QHJe.png",
+  poster: "https://i.postimg.cc/pTqKR8Y2/cover.webp",
+  logo: "https://i.postimg.cc/sXV5kKSj/logof.webp",
   episodes: [
     { title: "Episódio 1", url: "https://www.mediafire.com/file/qu1bs8hetxox473/TDO01.html" },
     { title: "Episódio 2", url: "#" },
