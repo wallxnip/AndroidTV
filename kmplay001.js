@@ -10,3 +10,21 @@ const config = {
     { title: "Episódio 3", url: "#" }
   ]
 };
+
+
+// ===========================
+// Integração dinâmica de poster, logo e thumbs
+// ===========================
+const { poster, logo, episodes } = config;
+const playerPoster = document.getElementById('player');
+if (playerPoster) playerPoster.poster = poster;
+
+const logoElement = document.getElementById('topLogoWrap');
+if (logoElement) {
+  logoElement.innerHTML = `<img src="${logo}"/>`;
+}
+episodes.forEach(ep => {
+  if(!ep.thumb) {
+    ep.thumb = poster;
+  }
+});
