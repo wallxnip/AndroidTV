@@ -4,7 +4,7 @@
 // ===========================
 const config = {
   poster: "https://image.tmdb.org/t/p/original/14g5B3sqDLH6ldDBJLcRBvzh2kc.jpg",
-  logo: "https://image.tmdb.org/t/p/original/tQsNL1ULG7NsE6Hrzxtg2hFNIxA.png",
+  logo: "https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/b4/97/0e/b4970e04-2716-215e-fb6f-1ad8c6ceab57/nvf4238825919995546474.png/432x162.png",
   seasons: [
     {
       title: "Temporada 1",
