@@ -3,7 +3,7 @@
 // Substitua/ajuste as URLs/thumbs conforme precisar
 // ===========================
 const config = {
-  poster: "https://i.postimg.cc/CKZKP0q4/14g5B3sq-DLH6ld-DBJLc-RBvzh2kc.webp",
+  poster: "https://i.postimg.cc/LXb3d2Cq/ht.webp",
   logo: "https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/b4/97/0e/b4970e04-2716-215e-fb6f-1ad8c6ceab57/nvf4238825919995546474.png/432x162.png",
   seasons: [
     {
