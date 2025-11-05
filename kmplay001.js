@@ -2,8 +2,8 @@
 // Configuração dinâmica
 // ===========================
 const config = {
-  poster: "https://image.tmdb.org/t/p/original/14g5B3sqDLH6ldDBJLcRBvzh2kc.jpg",
-  logo: "https://image.tmdb.org/t/p/original/tQsNL1ULG7NsE6Hrzxtg2hFNIxA.png",
+poster: "https://image.tmdb.org/t/p/original/14g5B3sqDLH6ldDBJLcRBvzh2kc.jpg",
+logo: "https://image.tmdb.org/t/p/original/tQsNL1ULG7NsE6Hrzxtg2hFNIxA.png",
 episodes: [
 { title: "Episódio 1", url: "https://www.mediafire.com/file/tfzr1kndokyvny1/TH01.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/OlDsjMI8DkoEkaUXgnaMwA/1920x1080.webp" },
 
