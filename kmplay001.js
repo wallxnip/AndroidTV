@@ -17,14 +17,14 @@ const config = {
     },
     {
       title: "Temporada 2",
-      thumb: "https://is1-ssl.mzstatic.com/image/thumb/Q6xG679rsvztbi3_rrQ0fA/1920x1080.webp",
+      thumb: "https://image.tmdb.org/t/p/original/zvZeHqaN1QH43qM622oDQF10VTi.jpg",
       episodes: [
         { title: "Episódio 1", url: "#", thumb: "#" }
       ]
     },
     {
       title: "Temporada 3",
-      thumb: "https://is1-ssl.mzstatic.com/image/thumb/vpcNMjkp5LBACQjjk3_8FA/1920x1080.webp",
+      thumb: "https://image.tmdb.org/t/p/original/pQv6UGs32vJElkK51x0n9vuhCNa.jpg",
       episodes: [
         { title: "Episódio 1", url: "#", thumb: "#" }
       ]
