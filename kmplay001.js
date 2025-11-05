@@ -3,12 +3,12 @@
 // Substitua/ajuste as URLs/thumbs conforme precisar
 // ===========================
 const config = {
-  poster: "https://media.themoviedb.org/t/p/w1000_and_h563_face/7sOZuVHBzodbGR1wO5qzwN2vr3v.jpg",
+  poster: "https://i.postimg.cc/CKZKP0q4/14g5B3sq-DLH6ld-DBJLc-RBvzh2kc.webp",
   logo: "https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/b4/97/0e/b4970e04-2716-215e-fb6f-1ad8c6ceab57/nvf4238825919995546474.png/432x162.png",
   seasons: [
     {
       title: "Temporada 1",
-      thumb: "https://media.themoviedb.org/t/p/w1000_and_h563_face/i9iLY9FqVk00W1Jdok6DTJPPFd3.jpg",
+      thumb: "https://i.postimg.cc/0NHwjZpX/z-Xz-Bqb-Xieq-Rem290H5HZxt-XXc-Zl.webp",
       episodes: [
         { title: "Episódio 1", url: "https://www.mediafire.com/file/tfzr1kndokyvny1/TH01.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/OlDsjMI8DkoEkaUXgnaMwA/1920x1080.webp" },
         { title: "Episódio 2", url: "https://www.mediafire.com/file/77o8u2yoh4wa64t/TH02.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/Q6xG679rsvztbi3_rrQ0fA/1920x1080.webp" },
