@@ -15,7 +15,7 @@ episodes: [
 
 
 // ===========================
-// Integração dinâmica de poster, logo e thumbs
+// Integração dinâmica
 // ===========================
 const { poster, logo, episodes } = config;
 const playerPoster = document.getElementById('player');
