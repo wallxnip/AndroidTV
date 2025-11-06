@@ -35,6 +35,7 @@ thumb: "https://image.tmdb.org/t/p/original/pQv6UGs32vJElkK51x0n9vuhCNa.jpg",
 episodes: [
 { title: "Episódio 1", url: "#", thumb: "#" }
 ]
+}
 };
 
 
