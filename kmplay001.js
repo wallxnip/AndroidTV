@@ -16,7 +16,7 @@ episodes: [
 { title: "Episódio 4", url: "https://www.mediafire.com/file/eodzwg9u39harsc/TH04.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/UzepkXKnvAjwKkBEmrCjSA/1920x1080.webp" },
 { title: "Episódio 5", url: "https://www.mediafire.com/file/9dytv522ioxcwq7/TH05.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/814HMtrEg2n18P_ZT2jAJg/1920x1080.webp" },
 { title: "Episódio 6", url: "https://www.mediafire.com/file/tqxatkdp3vnoe21/TH06.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/5N38twmwgRIE2zPVL3zE4g/1920x1080.webp" },
-{ title: "Episódio 7", url: "https://www.mediafire.com/file/cd7jzdo85dukwhr/TH07.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/v3CQneBAwh6qV1cfIa_UiQ/1920x1080.webp" },
+{ title: "Episódio 7", url: "https://www.mediafire.com/file/cd7jzdo85dukwhr/TH07.mp4", thumb: "https://is1-ssl.mzstatic.com/image/thumb/v3CQneBAwh6qV1cfIa_UiQ/1920x1080.webp" }
 ]
 },
 
@@ -35,7 +35,6 @@ thumb: "https://image.tmdb.org/t/p/original/pQv6UGs32vJElkK51x0n9vuhCNa.jpg",
 episodes: [
 { title: "Episódio 1", url: "#", thumb: "#" }
 ]
-],
 };
 
 
