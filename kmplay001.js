@@ -36,8 +36,8 @@ episodes: [
 { title: "Episódio 1", url: "#", thumb: "#" }
 ]
 }
+],
 };
-
 
 // ===========================
 // Integração dinâmica (mantive nomes originais)
