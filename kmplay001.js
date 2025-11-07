@@ -11,7 +11,7 @@ title: "",
 thumb: "",
 episodes: [
 { title: "Resident Evil: O Hóspede Maldito (2002)", url: "https://www.mediafire.com/file/jxj6g81r36pg885/%25282002%2529_O_H%25C3%25B3spede_M%2Ald%2At%2A_-_1080p_5.1_Dual_%25C3%2581udio.mp4", thumb: "https://image.tmdb.org/t/p/original/1qmqIdPOX2aFfT9BSAfJr5rAbt6.jpg" },
-{ title: "Resident Evil 2: Apocalipse (2004)", url: "https://www.mediafire.com/file/4u7tb14ezp9obd7/%25282004%2529_Apocalipse_-_1080P_5.1_Dual_%25C3%2581udio.mp4", thumb: "https://image.tmdb.org/t/p/original/vjarsU6eiwNwbUUgkT2KIRLDdz3.jpg", logo: "https://image.tmdb.org/t/p/original/iyVqaqqP6Fg09V7yE5MZGl1IYzo.png", poster: "https://image.tmdb.org/t/p/original/vjarsU6eiwNwbUUgkT2KIRLDdz3.jpg"},
+{ title: "Resident Evil 2: Apocalipse (2004)", url: "https://www.mediafire.com/file/4u7tb14ezp9obd7/%25282004%2529_Apocalipse_-_1080P_5.1_Dual_%25C3%2581udio.mp4", thumb: "posts/re2.png", logo: "posts/re2_logo.webp", poster: "https://image.tmdb.org/t/p/original/vjarsU6eiwNwbUUgkT2KIRLDdz3.jpg"},
 { title: "", url: "", thumb: "" },
 { title: "", url: "", thumb: "" },
 { title: "", url: "", thumb: "" }
