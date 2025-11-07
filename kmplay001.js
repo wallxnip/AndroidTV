@@ -56,30 +56,3 @@ if (logoElement && logo) {
 episodes.forEach((ep) => {
   if (!ep.thumb) ep.thumb = poster || "";
 });
-
-// ===========================
-// Função principal para tocar episódio
-// ===========================
-function playEpisode(i) {
-  const list = getCurrentEpisodes();
-  if (!list || !list[i]) return;
-
-  episodeIndex = i;
-  selectedIndex = i;
-
-  const ep = list[i];
-
-  // Atualiza a fonte de vídeo
-  setVideoSource(ep.url);
-
-  // Atualiza o poster do player
-  if (videoEl) videoEl.poster = ep.poster || config.poster || "";
-
-  // Atualiza a logo específica do episódio
-  const miniLogo = document.getElementById("miniLogo"); // certifica que existe
-  if (miniLogo) miniLogo.src = ep.logo || config.logo || "";
-
-  pausedManually = false;
-  updateActiveCard();
-  hideNextButton();
-}
