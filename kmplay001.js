@@ -35,3 +35,26 @@ logoElement.innerHTML = `<img id="topLogo" src="${logo}"/>`;
 }
 // Se não houver thumb em episódios fallback, use poster
 if(Array.isArray(episodes)) episodes.forEach(ep => { if(!ep.thumb) ep.thumb = poster || ''; });
+
+
+function playEpisode(i) {
+  const list = getCurrentEpisodes();
+  if (!list || !list[i]) return;
+  episodeIndex = i;
+  selectedIndex = i;
+
+  const ep = list[i];
+
+  // atualiza o vídeo
+  setVideoSource(ep.url);
+
+  // atualiza o poster do player
+  if (playerPoster) playerPoster.poster = ep.poster || config.poster || '';
+
+  // atualiza a logo no player
+  if (miniLogo) miniLogo.src = ep.logo || config.logo || '';
+
+  pausedManually = false;
+  updateActiveCard();
+  hideNextButton();
+}
