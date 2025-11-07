@@ -2,8 +2,8 @@
 // CONFIG (mantém a estrutura original)
 // ===========================
 const config = {
-  poster: "",
-  logo: "",
+  poster: "posts/re2.png",
+  logo: "posts/re2_logo.webp",
   seasons: [
     {
       title: "",
