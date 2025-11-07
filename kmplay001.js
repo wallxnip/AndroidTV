@@ -1,5 +1,5 @@
 // ===========================
-// CONFIG (mantém estrutura original)
+// CONFIG (mantém estrutura padrão)
 // ===========================
 const config = {
   poster: "",
@@ -25,33 +25,38 @@ const config = {
 };
 
 // ===========================
-// Integração dinâmica
+// APLICAÇÃO DINÂMICA DE VISUAL
 // ===========================
-const { poster, logo } = config;
-let episodes =
-  (config.seasons && config.seasons[0] && config.seasons[0].episodes) || [];
+function applyEpisodeVisuals(ep) {
+  const videoEl = document.getElementById("player");
+  const topLogoWrap = document.getElementById("topLogoWrap");
+  const miniLogo = document.getElementById("miniLogo");
 
-// Referências do player
-const videoEl = document.getElementById("player");
-const topLogoWrap = document.getElementById("topLogoWrap");
-const miniLogo = document.getElementById("miniLogo");
+  // Atualiza poster do player
+  if (videoEl) {
+    videoEl.poster = ep.poster || config.poster || "";
+  }
 
-// Define poster e logo padrão (globais)
-if (videoEl && poster) videoEl.poster = poster;
+  // Atualiza logo do topo (logo principal)
+  if (topLogoWrap) {
+    const logoSrc = ep.logo || config.logo || "";
+    topLogoWrap.innerHTML = logoSrc
+      ? `<img src="${logoSrc}" id="topLogo" style="width:auto;max-height:60px;object-fit:contain;" />`
+      : "";
+  }
 
-if (topLogoWrap && logo) {
-  topLogoWrap.innerHTML = `<img id="topLogo" src="${logo}" alt="Logo principal">`;
+  // Atualiza mini logo (exibida no overlay ou canto do player)
+  if (miniLogo) {
+    const miniSrc = ep.logo || config.logo || "";
+    miniLogo.src = miniSrc;
+    miniLogo.style.width = "auto";
+    miniLogo.style.maxHeight = "40px";
+    miniLogo.style.objectFit = "contain";
+  }
 }
 
-if (miniLogo && logo) miniLogo.src = logo;
-
-// Se não houver thumb, usa o poster padrão
-episodes.forEach(ep => {
-  if (!ep.thumb) ep.thumb = poster || "";
-});
-
 // ===========================
-// Função principal: tocar episódio
+// FUNÇÃO PRINCIPAL PARA TOCAR EPISÓDIO
 // ===========================
 function playEpisode(i) {
   const list = getCurrentEpisodes();
@@ -59,30 +64,25 @@ function playEpisode(i) {
 
   episodeIndex = i;
   selectedIndex = i;
+
   const ep = list[i];
 
-  // Atualiza a fonte do vídeo
+  // Atualiza fonte de vídeo
   setVideoSource(ep.url);
-  videoEl.load();
 
-  // ====== POSTER ======
-  videoEl.poster = ep.poster || config.poster || "";
+  // Aplica visuais (poster + logos)
+  applyEpisodeVisuals(ep);
 
-  // ====== LOGO DO TOPO ======
-  if (topLogoWrap) {
-    const logoSrc = ep.logo || config.logo || "";
-    topLogoWrap.innerHTML = logoSrc
-      ? `<img id="topLogo" src="${logoSrc}" alt="Logo do episódio">`
-      : "";
-  }
-
-  // ====== MINI LOGO ======
-  if (miniLogo) {
-    miniLogo.src = ep.logo || config.logo || "";
-  }
-
-  // Continua execução do player normalmente
+  // Continua lógica do player
   pausedManually = false;
   updateActiveCard();
   hideNextButton();
 }
+
+// ===========================
+// AJUSTE INICIAL (caso precise de poster/logo padrão)
+// ===========================
+document.addEventListener("DOMContentLoaded", () => {
+  const firstEp = (config.seasons[0] && config.seasons[0].episodes[0]) || {};
+  applyEpisodeVisuals(firstEp);
+});
