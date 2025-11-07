@@ -1,5 +1,5 @@
 // ===========================
-// CONFIG (mantém a estrutura original)
+// CONFIG (mantém estrutura original)
 // ===========================
 const config = {
   poster: "",
@@ -18,10 +18,7 @@ const config = {
           thumb: "posts/re2.png",
           logo: "posts/re2_logo.webp",
           poster: "posts/re2.png"
-        },
-        { title: "", url: "", thumb: "" },
-        { title: "", url: "", thumb: "" },
-        { title: "", url: "", thumb: "" }
+        }
       ]
     }
   ]
@@ -30,33 +27,31 @@ const config = {
 // ===========================
 // Integração dinâmica
 // ===========================
-
-// Obter poster e logo globais (caso existam)
 const { poster, logo } = config;
-
-// Pegar a lista atual de episódios da temporada ativa
 let episodes =
   (config.seasons && config.seasons[0] && config.seasons[0].episodes) || [];
 
-// Referências dos elementos do player
+// Referências do player
 const videoEl = document.getElementById("player");
-const logoElement = document.getElementById("topLogoWrap");
+const topLogoWrap = document.getElementById("topLogoWrap");
+const miniLogo = document.getElementById("miniLogo");
 
-// Aplica o poster global no player (caso exista)
+// Define poster e logo padrão (globais)
 if (videoEl && poster) videoEl.poster = poster;
 
-// Exibe a logo global no topo (caso exista)
-if (logoElement && logo) {
-  logoElement.innerHTML = `<img id="topLogo" src="${logo}" />`;
+if (topLogoWrap && logo) {
+  topLogoWrap.innerHTML = `<img id="topLogo" src="${logo}" alt="Logo principal">`;
 }
 
-// Se não houver thumb no episódio, usa o poster global
-episodes.forEach((ep) => {
+if (miniLogo && logo) miniLogo.src = logo;
+
+// Se não houver thumb, usa o poster padrão
+episodes.forEach(ep => {
   if (!ep.thumb) ep.thumb = poster || "";
 });
 
 // ===========================
-// Função principal para tocar episódio
+// Função principal: tocar episódio
 // ===========================
 function playEpisode(i) {
   const list = getCurrentEpisodes();
@@ -64,19 +59,29 @@ function playEpisode(i) {
 
   episodeIndex = i;
   selectedIndex = i;
-
   const ep = list[i];
 
-  // Atualiza a fonte de vídeo
+  // Atualiza a fonte do vídeo
   setVideoSource(ep.url);
+  videoEl.load();
 
-  // Atualiza o poster do player
-  if (videoEl) videoEl.poster = ep.poster || config.poster || "";
+  // ====== POSTER ======
+  videoEl.poster = ep.poster || config.poster || "";
 
-  // Atualiza a logo específica do episódio
-  const miniLogo = document.getElementById("miniLogo"); // certifica que existe
-  if (miniLogo) miniLogo.src = ep.logo || config.logo || "";
+  // ====== LOGO DO TOPO ======
+  if (topLogoWrap) {
+    const logoSrc = ep.logo || config.logo || "";
+    topLogoWrap.innerHTML = logoSrc
+      ? `<img id="topLogo" src="${logoSrc}" alt="Logo do episódio">`
+      : "";
+  }
 
+  // ====== MINI LOGO ======
+  if (miniLogo) {
+    miniLogo.src = ep.logo || config.logo || "";
+  }
+
+  // Continua execução do player normalmente
   pausedManually = false;
   updateActiveCard();
   hideNextButton();
