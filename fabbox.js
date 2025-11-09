@@ -1,4 +1,39 @@
 // ===========================
+// CONFIG (mantém a estrutura original)
+// ===========================
+const config = {
+  poster: "posts/re.png", // Poster padrão
+  logo: "posts/re_logo.webp", // Logo padrão
+  seasons: [
+    {
+      title: "",
+      thumb: "",
+      episodes: [
+        {
+          url: "https://www.mediafire.com/file/jxj6g81r36pg885/%25282002%2529_O_H%25C3%25B3spede_M%2Ald%2At%2A_-_1080p_5.1_Dual_%25C3%2581udio.mp4",
+          thumb: "https://i.postimg.cc/hGdMs99c/re.webp",
+          logo: "https://i.postimg.cc/gkrzgD2h/relogo.webp",
+          poster: "https://i.postimg.cc/Pr6LxJCn/re.webp"
+        },
+        {
+          url: "https://www.febbox.com/share/fImj44is",
+          thumb: "posts/re2.png",
+          logo: "posts/re2_logo.webp",
+          poster: "posts/re2.png"
+        }
+        // Adicione mais episódios aqui se quiser
+        // {
+        //   url: "https://link-do-video.mp4",
+        //   thumb: "posts/thumb3.png",
+        //   logo: "posts/logo3.webp",
+        //   poster: "posts/poster3.webp"
+        // }
+      ]
+    }
+  ]
+};
+
+// ===========================
 // Integração dinâmica + Envio pro App (MediaFire / Febbox)
 // ===========================
 
