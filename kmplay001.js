@@ -11,7 +11,7 @@ const config = {
       episodes: [
         {
           url: "https://www.mediafire.com/file/jxj6g81r36pg885/%25282002%2529_O_H%25C3%25B3spede_M%2Ald%2At%2A_-_1080p_5.1_Dual_%25C3%2581udio.mp4",
-          thumb: "https://image.tmdb.org/t/p/original/h8jOye1I8pQFdoXqU0XNQosmFvV.jpg" logo: "https://image.tmdb.org/t/p/original/tNhZY1CtUPAKGkzi0XrJHO7vcLA.png",
+          thumb: "https://image.tmdb.org/t/p/original/h8jOye1I8pQFdoXqU0XNQosmFvV.jpg", logo: "https://image.tmdb.org/t/p/original/tNhZY1CtUPAKGkzi0XrJHO7vcLA.png",
           poster: "https://image.tmdb.org/t/p/original/eLuE9zFExdASgZkUPSvTh6ocFtk.jpg"
         },
         {
