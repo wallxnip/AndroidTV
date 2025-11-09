@@ -10,7 +10,7 @@ const config = {
       thumb: "",
       episodes: [
         {
-          url: "https://www.mediafire.com/file/jxj6g81r36pg885/%25282002%2529_O_H%25C3%25B3spede_M%2Ald%2At%2A_-_1080p_5.1_Dual_%25C3%2581udio.mp4",
+          url: "https://www.febbox.com/share/fImj44is",
           thumb: "https://i.postimg.cc/hGdMs99c/re.webp",
           logo: "https://i.postimg.cc/gkrzgD2h/relogo.webp",
           poster: "https://i.postimg.cc/Pr6LxJCn/re.webp"
@@ -34,7 +34,7 @@ const config = {
 };
 
 // ===========================
-// Integração dinâmica + Envio pro App (MediaFire / Febbox)
+// Integração dinâmica
 // ===========================
 
 // Obter poster e logo globais (caso existam)
@@ -64,47 +64,4 @@ if (miniLogoEl && logo)
 // Se não houver thumb no episódio, usa o poster global
 episodes.forEach((ep) => {
   if (!ep.thumb) ep.thumb = poster || "";
-});
-
-// Função auxiliar: detectar tipo e enviar link pro app
-async function handleEpisodeLink(url) {
-  try {
-    let finalLink = url;
-
-    // Caso seja um link Febbox
-    if (url.includes("febbox.com")) {
-      const shareKey = url.split("/").pop().split("?")[0];
-      const apiUrl = `https://www.febbox.com/file/share_download?share_key=${shareKey}`;
-      const res = await fetch(apiUrl);
-      const data = await res.json();
-      if (data.download_url) {
-        finalLink = data.download_url;
-      } else {
-        console.error("Falha ao obter link direto Febbox");
-        return;
-      }
-    }
-
-    // Envia para o app (Android bridge)
-    if (window.Android && window.Android.onDirectLink) {
-      window.Android.onDirectLink(finalLink);
-    } else {
-      // Caso o app não esteja disponível, apenas reproduz no player local (teste web)
-      if (videoEl) {
-        videoEl.src = finalLink;
-        videoEl.play().catch(console.error);
-      }
-    }
-  } catch (err) {
-    console.error("Erro ao processar link:", err);
-  }
-}
-
-// Exemplo de integração: clique no episódio
-// (ajuste se você já tiver um evento próprio de seleção)
-document.querySelectorAll(".episode-item").forEach((btn, index) => {
-  btn.addEventListener("click", () => {
-    const ep = episodes[index];
-    if (ep && ep.url) handleEpisodeLink(ep.url);
-  });
 });
