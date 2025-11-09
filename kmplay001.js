@@ -16,7 +16,7 @@ const config = {
           poster: "https://i.postimg.cc/Pr6LxJCn/re.webp"
         },
         {
-          url: "https://www.mediafire.com/file/4u7tb14ezp9obd7/%25282004%2529_Apocalipse_-_1080P_5.1_Dual_%25C3%2581udio.mp4",
+          url: "https://www.febbox.com/share/fImj44is",
           thumb: "posts/re2.png",
           logo: "posts/re2_logo.webp",
           poster: "posts/re2.png"
