@@ -65,11 +65,3 @@ if (miniLogoEl && logo)
 episodes.forEach((ep) => {
   if (!ep.thumb) ep.thumb = poster || "";
 });
-
-// Clique nos episódios envia o link direto para o app
-$$('.ep a').forEach(a => {
-    a.addEventListener('click', e => {
-        e.preventDefault(); // previne abrir link no navegador
-        window.setVideoSource(a.href); // envia para o player/app
-    });
-});
