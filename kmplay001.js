@@ -11,9 +11,9 @@ const config = {
       episodes: [
         {
           url: "https://www.mediafire.com/file/jxj6g81r36pg885/%25282002%2529_O_H%25C3%25B3spede_M%2Ald%2At%2A_-_1080p_5.1_Dual_%25C3%2581udio.mp4",
-          thumb: "https://i.postimg.cc/7LjP8yG5/ox-ZX9s92Xr5f7mn-FCGy-Es-B5m-COb.jpg",
+          thumb: "https://i.postimg.cc/hGdMs99c/re.webp",
           logo: "https://i.postimg.cc/FRGSVRnm/relogo.webp",
-          poster: "https://i.postimg.cc/gktDPMs2/re-cv.webp"
+          poster: "https://i.postimg.cc/Pr6LxJCn/re.webp"
         },
         {
           url: "https://www.mediafire.com/file/4u7tb14ezp9obd7/%25282004%2529_Apocalipse_-_1080P_5.1_Dual_%25C3%2581udio.mp4",
