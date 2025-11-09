@@ -66,37 +66,10 @@ episodes.forEach((ep) => {
   if (!ep.thumb) ep.thumb = poster || "";
 });
 
-// ---------- clique nos episódios ----------
+// Clique nos episódios envia o link direto para o app
 $$('.ep a').forEach(a => {
     a.addEventListener('click', e => {
-        e.preventDefault(); // evita navegação padrão
-        const poster = a.dataset.poster || '';
-        const logo = a.dataset.logo || '';
-        const href = a.href;
-
-        // Mostra feedback no overlay
-        overlay.textContent = 'Preparando… entre no app para extrair link.';
-
-        // Atualiza poster e logos locais
-        if (poster) player.poster = poster;
-        if (logo) { topLogo.src = logo; miniLogo.src = logo; }
-
-        // Debug / banner
-        logDebug('Clique no episódio -> href: ' + href);
-        showBanner('Link enviado ao app: ' + href, 3000);
-
-        // O app deve interceptar o href e chamar setVideoSource(url_real)
-    }, { passive: true });
+        e.preventDefault(); // previne abrir link no navegador
+        window.setVideoSource(a.href); // envia para o player/app
+    });
 });
-
-// ---------- função chamada pelo app ----------
-window.setVideoSource = function(url) {
-    if (!url) { showBanner('URL inválida'); return; }
-    overlay.textContent = 'Carregando...';
-    showBanner('Link recebido: ' + url, 6000);
-    logDebug('setVideoSource -> ' + url);
-    player.src = url;
-    player.load();
-    player.play().catch(() => { logDebug('Autoplay bloqueado'); });
-    setTimeout(() => overlay.textContent = 'Tocando: ' + (url.split('/').pop() || ''), 1200);
-};
