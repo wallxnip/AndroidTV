@@ -18,7 +18,7 @@ const config = {
         {
           url: "https://www.mediafire.com/file/4u7tb14ezp9obd7/%25282004%2529_Apocalipse_-_1080P_5.1_Dual_%25C3%2581udio.mp4",
           thumb: "posts/re2.png",
-          logo: "https://i.postimg.cc/FRGSVRnm/relogo.webp",
+          logo: "posts/re2_logo.webp",
           poster: "posts/re2.png"
         }
         // Adicione mais episódios aqui se quiser
