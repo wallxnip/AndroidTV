@@ -1,4 +1,4 @@
 // Dados de séries e episódios (8 episódios)
 const episodes = [
-{title:"Episódio 3", thumb:"https://image.tmdb.org/t/p/original/AjwsOW62iFDUAx9ehJYoPdHC5h8.jpg", url:"https://playpobreflix.net/m3/cXBvOTdOZnEzWG1FK0w3MGZlemxRd0wzZXZUWEdsQzRNR1puaTBIQU9oeTV5NjdqUFJYb3VMRDRUQ1pndXIvYWxxWkNrMGNidUFDaXBCcERXa25ySUJrYVRyNTNqRXZ6czI0bS9Na21FS3NCNTZrbnpMV2RZeGxuR0VsU2Exa3pvWGhXNkJsY2QyN0g1YWJSZ1lWZ0JzcFBDOFBzdzlrWVVtdXJNbnEyNGxZNExvclhzZFd4b0YweTlLTTVIY2h2Mmd5bXZhNXlaNlgrYzN3aDZhSlRURTVueXB0TEd6ZC81V3hPOGZCamVlSTdQbk95MzNiZlk2NjBXcFdFMW9lSW1UcHlBeE5LeUdzalptZ1liNnZYSVhuTUhER2Ezbyt6a1U2c3R3RzhVS3VOdFJ1NGJrQk9tbUFtcm50TXpXSUo%3D"},
+{title:"Episódio 3", thumb:"https://image.tmdb.org/t/p/original/AjwsOW62iFDUAx9ehJYoPdHC5h8.jpg", url:"https://box-1087-y.vmeas.cloud/hls/xqx2ofvaynokjiqbteqc5lqqwo57y7uece5h5ntkfyhdscrqzarakbwajz4a/index-v1-a1.m3u8"},
 ];
