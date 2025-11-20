@@ -1,4 +1,4 @@
 // Dados de séries e episódios (8 episódios)
 const episodes = [
-{title:"Episódio 1", thumb:"https://image.tmdb.org/t/p/original/AjwsOW62iFDUAx9ehJYoPdHC5h8.jpg", url:"https://drive.usercontent.google.com/u/0/uc?id=1m5NJdQZf7oVUFbb2s6StLsiHJar-0p2z&export=download"},
+{title:"Episódio 1", thumb:"https://image.tmdb.org/t/p/original/AjwsOW62iFDUAx9ehJYoPdHC5h8.jpg", url:"https://playpobreflix.net/m3/cXBvOTdOZnEzWG1FK0w3MGZlemxRd0wzZXZUWEdsQzRNR1puaTBIQU9oeTV5NjdqUFJYb3VMRDRUQ1pndXIvYWxxWkNrMGNidUFDaXBCcERXa25ySUJrYVRyNTNqRXZ6czI0bS9Na21FS3NCNTZrbnpMV2RZeGxuR0VsU2Exa3pvWGhXNkJsY2QyN0g1YWJSZ1lWZ0JzcFBDOFBzdzlrWVVtdXJNbnEyNGxZNExvclhzZFd4b0YweTlLTTVIY2h2Mmd5bXZhNXlaNlgrYzN3aDZhSlRURTVueXB0TEd6ZC81V3hPOGZCamVlSTdQbk95MzNiZlk2NjBXcFdFMW9lSW1UcHlBeE5LeUdzalptZ1liNnZYSVhuTUhER2Ezbyt6a1U2c3R3RzhVS3VOdFJ1NGJrQk9tbUFtcm50TXpXSUo%3D"},
 ];
